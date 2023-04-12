@@ -39,6 +39,12 @@ const on = (type, el, listener, all = false) => {
     }
   }
 }
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const body = document.querySelector('body');
+
+hamburgerIcon.addEventListener('click', function() {
+  body.classList.toggle('no-scroll');
+});
 
 /* To go to the navBar links */
 on('click', '.scrollto', function(e) {

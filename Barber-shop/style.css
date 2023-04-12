@@ -117,7 +117,14 @@ ul li:hover {
   }
 
 }
-
+/* prevents the page from scolling when the Toggle button is toggled */
+.no-scroll {
+  overflow: hidden;
+}
+span{
+  color: white;
+  text-decoration: none;
+}
 /* Mobile Navigation */
 
 #welcome{
@@ -168,7 +175,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-padding: 20px;
+padding: 10px;
 }
 #services-section h1{
 text-align: center;
@@ -280,8 +287,7 @@ margin: 0;
 font-size: 1.2rem;
 font-weight: 600;
 }
-.customers h1{
-background-color: black;
+.customer-reviews h1{
 margin: 0;
 color: white;
 text-align: center;
@@ -292,11 +298,31 @@ font-size: 1rem;
 line-height: 1.4;
 flex-grow: 1;
 }
+
+#navtable button{
+  background-color: #8a7321;
+color: #fff;
+border: none;
+width: 200px;
+height: 30px;
+border-radius: 5px;
+cursor: pointer;
+}
 .customer-card span{
 font-size: 0.8rem;
 font-style: italic;
 text-align: right;
 color: #666;
+}
+@media (min-width: 800px) {
+  .customers h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    text-align: center;
+  }
 }
 .stars{
 color: #ffd700; /* set star color to gold */
@@ -320,12 +346,21 @@ border:0;
 }
 .directions{
 position: relative;
+width: 100%;
 }
+.end{
+  color: #f5f5f5;
+  background-color: #1b1b1b;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  }
 @media only screen and (max-width: 600px) {
-  .map {
+  /* .map {
     height:100%;
     
-  }
+  } */
 .cardt{
   width: 200px;
   height: 200px;
@@ -333,40 +368,55 @@ position: relative;
 .customer-card{
   width: 350px;
   height: 200px;
-  }
-  .imagee {
-    background-image: url('path/to/your/image.jpg');
+}
+.imagee {
+    background-image: url("photos/Barber-cutting.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
   }
-}
-
-.end{
-color: #f5f5f5;
-background-color: #1b1b1b;
-padding: 20px;
-margin: auto;
-display: flex;
-justify-content: space-around;
+  .texte{
+    height: 50vh;
+  }
+  .containerr{
+    height: 50vh;
+  }
+  .end{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .mapbtn{
 background-color: #8a7321;
 color: #fff;
-padding: 10px 20px;
 border: none;
 border-radius: 5px;
 font-size: 16px;
 cursor: pointer;
 text-decoration: none;
 display: inline-block;
+width: 150px;
+height: 50px;
+margin-bottom: 10px;
 }
 .callbtn{
+width: 150px;
+height: 50px;
 background-color: #8a7321;
 color: #fff;
-padding: 10px 20px;
 border: none;
 border-radius: 5px;
 font-size: 16px;
 cursor: pointer;
+margin-bottom: 10px;
+
+}
+.dom td:first-child{
+  padding-right: 10px;
+}
+.end h5{
+  padding: 10px;
+}
+#btnn{
+  padding: 10px;
 }
