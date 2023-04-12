@@ -17,15 +17,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header id ="header" >
-            <div id="brand"> <img class ="logo" src="photos/logo.png" alt="Logo" style="width: 75px; height: 75px; padding: 0;"> </div>
+        <header id ="header">
+            <div id="brand"> <img class ="logo" src="photos/logo.png" alt="Frisur Siegen" style="width: 75px; height: 75px; padding: 0;"> </div>
             <nav>
-              <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/about">About</a></li>
-                <li id="login"><a href="/login" >Login</a></li>
-                <li id="signup"><a href="/signup">Signup</a></li>
+              <ul id ="navtable">
+                <li><a><button id="navButton">Jetzt Anrufen</button></a></li>
+                <li><a href="#welcome" class="nav-link scrollto active"></i><span>Home</span></a></li>
+                <li><a href="#services-section" class="nav-link scrollto active"><span>Products</span></a></li>
+                <li><a href="#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
+                <li><a href="#services-section" class="nav-link scrollto active"><span>Route Anzeigen</span></a></li>
               </ul>
             </nav>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -33,11 +33,11 @@
               <div class="bar2"></div>
               <div class="bar3"></div>
               <ul class="mobile-menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/about">About</a></li>
-                <li><button id="navButton">Anrufen</button></li>
-                <li id="signup"><a href="/signup">Signup</a></li>
+                <li><a><button id="navButton">Jetzt Anrufen</button></a></li>
+                <li><a href="#welcome" class="nav-link scrollto active"></i><span>Home</span></a></li>
+                <li><a href="#services-section" class="nav-link scrollto active"><span>Products</span></a></li>
+                <li><a href="#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
+                <li><a href="#services-section" class="nav-link scrollto active"><span>Route Anzeigen</span></a></li>
               </ul>
             </div>
           </header>
@@ -49,7 +49,7 @@
         </section>
         <main id="main">
             <section id = "services-section">
-                <h1>Our services</h1> 
+                <h1>Unsere services</h1> 
                 <div class="services" >
                     <div class="cardt" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
@@ -63,18 +63,27 @@
                     <div class="cardt" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2500">                        
-                        <img src="/photos/beard.png">
+                        <img src="photos/beard.png">
                         <div class="cardt-contentt">
-                            <h3>Bard</h3>
+                            <h3>Bartpflege</h3>
                             <p>hier kommt ein text</p>
                         </div>
                     </div>
                     <div class="cardt" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="3000">                        
-                        <img src="/photos/hand-soap.png">
+                        <img src="photos/hand-soap.png">
                         <div class="cardt-contentt">
-                            <h3>Skin Care</h3>
+                            <h3>Hautpflege</h3>
+                            <p>hier kommt ein text</p>
+                        </div>
+                    </div>
+                    <div class="cardt" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">                        
+                        <img src="photos/hair-cut.png">
+                        <div class="cardt-contentt">
+                            <h3>Haare Färben</h3>
                             <p>hier kommt ein text</p>
                         </div>
                     </div>
@@ -89,9 +98,9 @@
                         </div>
                     </div>
                 </div>
-                <section class="customers">
-                    <h1>Was unsere Kunden über uns sagen</h1>
+                <section id="customers" class="customers">
                     <div class="customer-reviews">
+                        <h1>Was unsere Kunden über uns sagen</h1>
                         <div class="customer-card" data-aos="fade-up" data-aos-duration="1500">
                             <div class="stars">
                                 <i class="bi bi-star-fill"></i>
@@ -135,27 +144,28 @@
                 </div>
                 <div class="end">
                     <div style="text-align: center;">
-                        <button class="mapbtn"><a href="https://www.google.com/maps/dir/?api=1&destination=Friseur+Kunst+Fero,+Germany" target="_blank" style="color: black; text-decoration: none;">ROUTE ANZEIGEN</a></button>
+                        <h5>Adresse</h5>
+                        <button class="mapbtn"><a href="https://www.google.com/maps/dir/?api=1&destination=Friseur+Kunst+Fero,+Germany" target="_blank" style="color: white; text-decoration: none;">Route Anzeigen</a></button>
+                        <h6>Sandstraße 11</h6>
+                        <h6>57072 Siegen</h6>
+                        <h6>Deutschland</h6>
                     </div>
                     <div style="text-align: center;">
-                        <button class ="callbtn" onclick="location.href='tel:'">Anrufen</button>
+                        <h5>Kontakt</h5>
+                        <button class ="callbtn" onclick="location.href='tel:' " style="color:white; text-decoration: none;">Anrufen</button>
                     </div>
                     <div style="text-align: center;">
-                        <p>Öffnungszeiten</p>
+                        <h5>Öffnungszeiten</h5>
                         <div>
-                            <table>
-                                <tr><td>Mo:</td><td>09:30–19:00 Uhr</td></tr>
-                                <tr><td>Di:</td><td>09:30–19:00 Uhr</td></tr>
-                                <tr><td>Mi:</td><td>09:30–19:00 Uhr</td></tr>
-                                <tr><td>Do:</td><td>09:30–19:00 Uhr</td></tr>
-                                <tr><td>Fr:</td><td>09:30–19:00 Uhr</td></tr>
+                            <table class="dom">
+                                <tr><td>Mo-Fr:</td><td>09:30–19:00 Uhr</td></tr>
                                 <tr><td>Sa:</td><td>08:30–17:00 Uhr</td></tr>
                                 <tr><td>So:</td><td>Geschlossen</td></tr>
                             </table>
                         </div>
                     </div>
                 </div>
-            
+            </div>
         </main>
         <script src="vendors/node_modules/aos/dist/aos.js"></script>
         <script src="vendors/node_modules/typed.js/lib/typed.min.js"></script>

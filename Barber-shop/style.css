@@ -20,7 +20,6 @@ header {
   justify-content: space-between;
   z-index: 999;
   transition: all ease-in-out 0.7s;
-
 }
 
 #brand {
@@ -87,10 +86,20 @@ ul li:hover {
 .open .mobile-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
   z-index: 999;
+  background-color: #1d1f1d;
+  opacity: 0.9;
 
+}
+.open .mobile-menu button{
+  background-color: #8a7321;
+  color: #fff;
+  border: none;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .mobile-menu {
@@ -107,7 +116,7 @@ ul li:hover {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 710px) {
   header nav {
     display: none;
   }
@@ -323,6 +332,7 @@ color: #666;
     z-index: 999;
     text-align: center;
   }
+  
 }
 .stars{
 color: #ffd700; /* set star color to gold */
@@ -356,11 +366,7 @@ width: 100%;
   display: flex;
   justify-content: space-around;
   }
-@media only screen and (max-width: 600px) {
-  /* .map {
-    height:100%;
-    
-  } */
+@media only screen and (max-width: 750px) {
 .cardt{
   width: 200px;
   height: 200px;
@@ -377,6 +383,11 @@ width: 100%;
   }
   .texte{
     height: 50vh;
+    width: auto;
+  }
+  .texte p{
+    font-size: 30px;
+    padding: 15px;
   }
   .containerr{
     height: 50vh;
@@ -384,6 +395,21 @@ width: 100%;
   .end{
     display: flex;
     flex-direction: column;
+    height: auto;
+  }
+  .services{
+    height: auto;
+  }
+  .customer-reviews{
+    height: auto;
+  }
+  .containerr{
+    width: auto;
+    height: auto;
+  }
+  .button-container{
+    width:auto;
+    height: auto;
   }
 }
 .mapbtn{
