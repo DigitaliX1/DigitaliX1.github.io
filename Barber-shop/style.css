@@ -18,7 +18,7 @@ header {
   height: 50px;
   display: flex;
   justify-content: space-between;
-  z-index: 999;
+  z-index: 998;
   transition: all ease-in-out 0.7s;
 }
 
@@ -87,7 +87,7 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 999;
+  z-index: 9999;
   background-color: #1d1f1d;
   opacity: 0.9;
 
@@ -329,7 +329,7 @@ color: #666;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 997;
     text-align: center;
   }
   
