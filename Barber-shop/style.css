@@ -9,8 +9,9 @@ header a {
   text-decoration: none;
 }
 
-header {
+#header {
   position: fixed;
+  top: 0;
   right: 0;
   left: 0;
   padding: 0 20px;
@@ -225,6 +226,7 @@ font-size: 16px;
 cursor: pointer;
 }
 .cardt{
+
 background-color: white;
 display: flex;
 flex-direction: column;
