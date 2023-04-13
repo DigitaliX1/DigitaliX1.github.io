@@ -87,7 +87,7 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 9999;
+  z-index: 1;
   background-color: #1d1f1d;
   opacity: 0.9;
 
@@ -116,16 +116,6 @@ ul li:hover {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 710px) {
-  header nav {
-    display: none;
-  }
-
-  #hamburger-icon {
-    display: block;
-  }
-
-}
 /* prevents the page from scolling when the Toggle button is toggled */
 .no-scroll {
   overflow: hidden;
@@ -240,8 +230,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
-width: 250px;
-height: 250px;
+width: 300px;
+height: 300px;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 margin: 10px;
@@ -252,20 +242,21 @@ width: 55px;
 height: 55px;
 margin-bottom: 20px;
 }
+.cardt-contentt p{
+  text-decoration: none;
+  font-weight: lighter;
+  opacity: 0.5;
+  font-size:5px;
+}
 .cardt-contentt{
 display: flex;
 flex-direction: column;
 align-items: center;
 }
-.cardt-contentt h3{
-margin: 0;
-font-size: 24px;
-font-weight: bold;
-}
 .cardt-contentt p{
 margin: 10px 0 0;
 text-align: center;
-font-size: 18px;
+font-size: 12px;
 line-height: 1.5;
 }
 .customer-reviews{
@@ -367,6 +358,14 @@ width: 100%;
   justify-content: space-around;
   }
 @media only screen and (max-width: 750px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
 .cardt{
   width: 200px;
   height: 200px;
