@@ -19,7 +19,7 @@ header a {
   height: 50px;
   display: flex;
   justify-content: space-between;
-  z-index: 998;
+  z-index: 999;
   transition: all ease-in-out 0.7s;
   overflow: hidden;
 }
@@ -89,7 +89,7 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 999;
+  z-index: 998;
   background-color: #1d1f1d;
   opacity: 0.9;
 
@@ -155,7 +155,7 @@ margin: 0 0 10px 0;
 font-size: 64px;
 font-weight: 700;
 line-height: 56px;
-color: #fff;
+color: red;
 }
 #welcome p{
 color: #fff;
@@ -170,6 +170,8 @@ letter-spacing: 1px;
 border-bottom: 3px solid #8a7321;
 }
 .services{
+  position: relative;
+  z-index: 993;
 height: 100vh;
 background-color: black;
 display: flex;
@@ -227,7 +229,7 @@ font-size: 16px;
 cursor: pointer;
 }
 .cardt{
-
+z-index: 995;
 background-color: white;
 display: flex;
 flex-direction: column;
