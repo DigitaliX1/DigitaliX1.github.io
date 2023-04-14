@@ -170,8 +170,8 @@ letter-spacing: 1px;
 border-bottom: 3px solid #8a7321;
 }
 .services{
-  position: relative;
-  z-index: 993;
+position: relative;
+z-index: 993;
 height: 100vh;
 background-color: black;
 display: flex;
@@ -234,7 +234,7 @@ background-color: white;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: start;
 width: 300px;
 height: 300px;
 border-radius: 10px;
@@ -247,23 +247,14 @@ width: 55px;
 height: 55px;
 margin-bottom: 20px;
 }
-.cardt-contentt p{
-  text-decoration: none;
-  font-weight: lighter;
-  opacity: 0.5;
-  font-size:5px;
-}
-.cardt-contentt{
+
+/* .cardt-contentt{
 display: flex;
 flex-direction: column;
 align-items: center;
-}
-.cardt-contentt p{
-margin: 10px 0 0;
-text-align: center;
-font-size: 12px;
-line-height: 1.5;
-}
+justify-content: center;
+
+} */
 .customer-reviews{
 height: 100vh;
 background-color: black;
@@ -297,15 +288,9 @@ margin: 0;
 color: white;
 text-align: center;
 }
-.customer-card p{
-margin: 0;
-font-size: 1rem;
-line-height: 1.4;
-flex-grow: 1;
-}
 
 #navtable button{
-  background-color: #8a7321;
+background-color: #8a7321;
 color: #fff;
 border: none;
 width: 200px;
@@ -319,7 +304,7 @@ font-style: italic;
 text-align: right;
 color: #666;
 }
-@media (min-width: 800px) {
+@media (min-width: 750px) {
   .customers h1 {
     position: absolute;
     top: 0;
@@ -328,6 +313,25 @@ color: #666;
     z-index: 997;
     text-align: center;
   }
+  .services{
+    height: auto;
+    width: auto;
+  }
+  .cardt-contentt p{
+    font-size: 20px;
+  }
+/*   .cardt h3{
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .cardt-contentt{
+    margin: 5px;
+  }
+  .cardt-contentt p{
+    margin: 0;
+    font-size: 11px;
+  } */
   
 }
 .stars{
@@ -370,10 +374,30 @@ width: 100%;
   #hamburger-icon {
     display: block;
   }
-
+  .services{
+    height: auto;
+    width: auto;
+  }
+  .cardt h3{
+    font-size: 18px;
+    margin: 0;
+  }
+  .cardt-contentt{
+    margin: 5px;
+  }
+  .cardt-contentt p{
+    margin: 0;
+    font-size: 11px;
+  }
+  .cardt img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
 .cardt{
-  width: 200px;
+  width: 150px;
   height: 200px;
+  justify-content: start;
 }
 .customer-card{
   width: 350px;
@@ -401,9 +425,7 @@ width: 100%;
     flex-direction: column;
     height: auto;
   }
-  .services{
-    height: auto;
-  }
+
   .customer-reviews{
     height: auto;
   }
@@ -415,6 +437,20 @@ width: 100%;
     width:auto;
     height: auto;
   }
+}
+@media only screen and (max-width: 400px) {
+  .services{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardt img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+
 }
 .mapbtn{
 background-color: #8a7321;
