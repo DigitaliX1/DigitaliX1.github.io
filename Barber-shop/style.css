@@ -169,17 +169,7 @@ padding-bottom: 4px;
 letter-spacing: 1px;
 border-bottom: 3px solid #8a7321;
 }
-.services{
-position: relative;
-z-index: 993;
-height: 100vh;
-background-color: black;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-padding: 10px;
-}
+
 #services-section h1{
 text-align: center;
 background-color: black;
@@ -235,8 +225,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: start;
-width: 300px;
-height: 300px;
+width: 280px;
+height: 280px;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 margin: 10px;
@@ -334,6 +324,17 @@ color: #666;
   } */
   
 }
+.services{
+  position: relative;
+  z-index: 993;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  }
 .stars{
 color: #ffd700; /* set star color to gold */
 }
