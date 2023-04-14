@@ -270,8 +270,9 @@ justify-content: space-between;
 }
 .customer-card h3{
 margin: 0;
-font-size: 1.2rem;
+font-size: 1.5rem;
 font-weight: 600;
+text-align: top;
 }
 .customer-reviews h1{
 margin: 0;
@@ -442,7 +443,7 @@ width: 100%;
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .services{
     height: auto;
     width: auto;
