@@ -216,7 +216,7 @@ cursor: pointer;
 }
 
 #hero:before {
-  background: url("media/bahas.jpg");
+  background: url("media/bahas.jpg") top center;
   background-size: cover;
   background-repeat: no-repeat;
   content: "";
