@@ -211,7 +211,7 @@ cursor: pointer;
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../media/baha.jpg") top center;
+  background: url("/media/baha.jpg") top center;
   background-size: cover;
 }
 
