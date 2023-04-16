@@ -216,17 +216,10 @@ cursor: pointer;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 400px) {
-  #hero {
-    background: url("media/bahas.jpg") top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 #hero:before {
   background: url("media/baha.jpg");
   background-size: cover;
-
+  background-repeat: no-repeat;
   content: "";
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
@@ -264,7 +257,13 @@ cursor: pointer;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
-
+@media (max-width: 400px) {
+  #hero {
+    background: url("media/bahas.jpg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 @media (min-width: 1024px) {
   #hero {
