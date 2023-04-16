@@ -213,10 +213,20 @@ cursor: pointer;
   height: 100vh;
   background: url("media/baha.jpg") top center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
+@media (max-width: 400px) {
+  #hero {
+    background: url("media/bahas.jpg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 #hero:before {
-  background: url("media/baha.jpg") top center;
+  background: url("media/baha.jpg");
+  background-size: cover;
+
   content: "";
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
@@ -254,6 +264,7 @@ cursor: pointer;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
+
 
 @media (min-width: 1024px) {
   #hero {
