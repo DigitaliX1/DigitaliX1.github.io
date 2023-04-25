@@ -4,6 +4,10 @@ margin: 0;
 font-family: 'Oswald', sans-serif;
 box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -164,8 +168,11 @@ color: white;
 #welcome p{
 color: #fff;
 margin-bottom: 50px;
-font-size: 26px;
-font-family: "Poppins", sans-serif;
+font-size: 24px;
+font-weight: lighter;
+}
+#welcome em{
+  font-weight: lighter;
 }
 #welcome p span{
 color: #fff;
@@ -411,7 +418,7 @@ width: 100%;
   height: 200px;
 }
 .imagee {
-    background-image: url("photos/fero.jpg");
+    background-image: url("photos/feros.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -441,8 +448,8 @@ width: 100%;
     height: auto;
   }
   .button-container{
-    width:auto;
-    height: auto;
+    width:150px;
+    height: 100px;
   }
   .customer-card p{
     font-size: 15px;
@@ -468,7 +475,21 @@ width: 100%;
     text-align: center;
     padding-right: 20px;
     font-size: 12px;
+  }.imagee {
+    background-image: url("photos/feroms.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  .texte{
+    height: 50vh;
+    width: 40%;
+  }
+  .texte p{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+/*     padding: 15px;
+ */  }
 
 }
 .mapbtn{
@@ -517,4 +538,24 @@ margin-bottom: 10px;
   color: white;
   font-size: 12px;
   text-decoration: none;
+}
+#Fero {
+  text-align: center;
+  margin-top: 50px; /* adjust as needed */
+  color: white;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h5 {
+  color: white;
+}
+h6{
+  color: white;
+}
+.dom{
+  color: white;
 }
