@@ -18,17 +18,22 @@ const select = (el, all = false) => {
     }
 }
 const typed = select('.typed')
- if (typed) {
-   let typed_strings = typed.getAttribute('data-typed-items')
-   typed_strings = typed_strings.split(',')
-   new Typed('.typed', {
-     strings: typed_strings,
-     loop: true,
-     typeSpeed: 100,
-     backSpeed: 50,
-     backDelay: 2000
-   });
+if (typed) {
+  let typed_strings = typed.getAttribute('data-typed-items')
+  typed_strings = typed_strings.split(',')
+  let typed_back_strings = typed.getAttribute('data-typed-backstrings')
+  typed_back_strings = typed_back_strings.split(',')
+  new Typed('.typed', {
+    strings: typed_strings,
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000,
+    backStrings: typed_back_strings
+  });
 }
+
+
 const on = (type, el, listener, all = false) => {
   let selectEl = select(el, all)
   if (selectEl) {
