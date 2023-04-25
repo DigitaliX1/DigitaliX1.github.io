@@ -323,6 +323,7 @@ color: #666;
   .cardt-contentt p{
     font-size: 20px;
   }
+  
 /*   .cardt h3{
     font-size: 18px;
     margin: 0;
@@ -418,7 +419,7 @@ width: 100%;
   height: 200px;
 }
 .imagee {
-    background-image: url("photos/feros.jpg");
+    background-image: url("photos/feroms.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -466,6 +467,10 @@ width: 100%;
     width: 40px;
     height: 40px;
     margin: 5px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
   }
   .customer-card p{
     font-size: 14px;
