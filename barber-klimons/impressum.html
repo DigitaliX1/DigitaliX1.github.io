@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <title>Barber Fero</title>
+        <title>MK-Friseur-Herren</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
         <link rel="icon" href="/photos/logso.png" type="image/x-icon">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
         <link rel="stylesheet" href="vendors/node_modules/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="vendors/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="vendors/node_modules/aos/dist/aos.css">
         <link rel="stylesheet" href="vendors/node_modules/animate.css/">
-        <link rel="stylesheet" href="vendors/node_modules/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="photos/logo.png">
     </head>
     <body>
         <header id ="header">
-            <div id="brand"><a href="index.html#welcome"> <img class ="logo" src="photos/logso.png" alt="Frisur Siegen" style="width: 50px; height: 50px; padding: 0;"></a> </div>
+            <div id="brand"><a href="/index.html"> <img class ="logo" src="photos/logo.png" alt="Frisur Siegen" style="width: 75px; height: 50px; padding-bottom: 0;"></a> </div>
             <nav>
               <ul id ="navtable">
-                <li><a><button class ="callbtn" onclick="location.href='tel: +4917682304061' " style="color:white; text-decoration: none;">Anrufen</button></a></li>                
-                <li><a href="index.html#welcome" class="nav-link scrollto active"></i><span>Home</span></a></li>
-                <li><a href="index.html#services-section" class="nav-link scrollto active"><span>Produkte</span></a></li>
-                <li><a href="index.html#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
-                <li><a href="https://www.google.com/maps/dir/?api=1&destination=Friseur+Kunst+Fero,+Germany" target="_blank" style="color: white; text-decoration: none;"><span>Route Anzeigen</span></a></li>
+                <li class="table-home">
+                    <a href="#welcome" class="nav-link scrollto active">
+                      <span>Home</span>
+                      <span class="submenu-arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                      <li><a href="damen-friseur.html" class="new-page-btn">Damen</a></li>
+                      <li><a href="herren-friseur.html" class="new-page-btn">Herren</a></li>
+
+                    </ul>
+                  </li>
+                <li class="table-home"><a href="#services-section" class="nav-link scrollto active"><span>Service</span></a></li>
+<!--                 <li class="table-home"><a href="#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
+ -->                <li class="table-home"><a href="https://www.google.com/maps/dir/?api=1&destination=Hammerhütter+Weg+5,+Germany" target="_blank" style="color: white; text-decoration: none;"><span>Route Anzeigen</span></a></li>
+                <li class="table-home"><a><button class ="callbtn" onclick="location.href='tel:017631192831' " style="color:white; text-decoration: none;">Anrufen</button></a></li>                
               </ul>
             </nav>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -34,32 +40,31 @@
               <div class="bar2"></div>
               <div class="bar3"></div>
               <ul class="mobile-menu">
-                <li><a><button class ="callbtn" onclick="location.href='tel:' " style="color:white; text-decoration: none;">Anrufen</button></a></li>
-                <li><a href="index.html#welcome" class="nav-link scrollto active"></i><span>Home</span></a></li>
-                <li><a href="index.html#services-section" class="nav-link scrollto active"><span>Produkte</span></a></li>
-                <li><a href="index.html#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
-                <li><a href="https://www.google.com/maps/dir/?api=1&destination=Friseur+Kunst+Fero,+Germany" target="_blank" style="color: white; text-decoration: none;"><span>Route Anzeigen</span></a></li>
+                <li><a href="#welcome" class="nav-link scrollto active"></i><span>Home</span></a></li>
+                <li><a href="#services-section" class="nav-link scrollto active"><span>Service</span></a></li>
+                <li><a href="damen-friseur.html" class="nav-link scrollto active"><span>Damen</span></a></li>
+<!--                 <li><a href="#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
+ -->             <li><a href="https://www.google.com/maps/dir/?api=1&destination=Hammerhütter+Weg+5,+Germany" target="_blank" style="color: white; text-decoration: none;"><span>Route Anzeigen</span></a></li>
+                <li class="table-home"><a><button class ="callbtn" onclick="location.href='tel:017631192831' " style="color:white; text-decoration: none;">Anrufen</button></a></li>                
               </ul>
             </div>
           </header>
-        <main id="maini">
-            <div id="Fero">
-                <h1>Barber Fero</h1>
-            </div>
-            <div id="center">
-                <div style="text-align: center;">
-                    <h5>Adresse</h5>
-                    <button class="mapbtn"><a href="https://www.google.com/maps/dir/?api=1&destination=Friseur+Kunst+Fero,+Germany" target="_blank" style="color: white; text-decoration: none;">Route Anzeigen</a></button>
-                    <h6>Sandstraße 11</h6>
+        <main id="main">
+            <div class="comp">
+                <div class="adressimp" style="text-align: center;">
+                    <h1>MK-Klimons Friseursalon</h1>
+                    <h2>Adresse</h2>
+                    <button class="mapbtn"><a href="https://www.google.com/maps/dir/?api=1&destination=Hammerhütter+Weg+5,+Germany" target="_blank" style="color: white; text-decoration: none;">Route Anzeigen</a></button>
+                    <h6>Hammerhütterwegb 5</h6>
                     <h6>57072 Siegen</h6>
                     <h6>Deutschland</h6>
                 </div>
                 <div style="text-align: center;">
-                    <h5>Kontakt</h5>
-                    <button class ="callbtn" onclick="location.href='tel:' " style="color:white; text-decoration: none;">Anrufen</button>
+                    <h2>Kontakt</h2>
+                    <button class ="callbtn" onclick="location.href='tel:017631192831' " style="color:white; text-decoration: none;">Anrufen</button>
                 </div>
                 <div style="text-align: center;">
-                    <h5>Öffnungszeiten</h5>
+                    <h2>Öffnungszeiten</h5>
                     <div>
                         <table class="dom">
                             <tr><td>Mo-Fr:</td><td>09:30–19:00 Uhr</td></tr>
@@ -69,12 +74,73 @@
                     </div>
                 </div>
             </div>
+            <div class="directions">
+                <iframe class = "map"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d629.4234312510781!2d8.0180558!3d50.8738696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc1c9292115213%3A0xa5ea26d5207a1d2d!2sHammerh%C3%BCtter%20Weg%207%2C%2057072%20Siegen!5e0!3m2!1sen!2sde!4v1685479867726!5m2!1sen!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </main>
+        <footer id="footer">
+            <div id="footer__cont">
+                <div id="footer__top">
+                    <div id="company__info">
+                        <div id="brand"><a href="#welcome"> <img class ="logo" src="photos/logo.png" alt="Frisur Siegen" style="width: 85px; height: 60px; padding-bottom: 0;"></a> </div>
+                        <p id="company__description">
+                            Erleben Sie Schönheit auf höchstem Niveau in unserem Haarsalon. Perfektioniertes Styling, individuelle Beratung und ein Team von Experten stehen bereit, um Ihre Haarträume wahr werden zu lassen.
+                            Entdecken Sie Ihren neuen Look und spüren Sie das Selbstvertrauen, das damit einhergeht. Willkommen in unserem Haarsalon - wo Schönheit zum Leben erweckt wird.
+                        </p>
+                        <ul id="footer__list">
+                            <li id="footer__list-item">
+                                <a href="https://www.instagram.com/mkfriseursalonklimans/" target="_blank" id="footer__list-link">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li id="footer__list-item">
+                                <a href="#" id="footer__list-link">
+                                    <i class="fa fa-facebook-official"></i>
+                                </a>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div>
+                        <h6 id="footer__title">Business</h6>
+                        <ul id="footer__list">
+                            <li id="footer__list-item">
+                                <a href="" id="footer__list-link">Home</a>
+                            </li>
+                            <li id="footer__list-item">
+                                <a href="" id="footer__list-link">Maps</a>
+                            </li>
+                            <li id="footer__list-item">
+                                <a href="" id="footer__list-link">Service</a>
+                            </li>
+                            <li id="footer__list-item">
+                                <a href="/impressum.html" id="footer__list-link">Impressum</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 id="footer__title">Contact</h6>
+                        <ul id="footer__list">
+                            <p>Hammerhütterweg 5 <br> 57072 Siegen</p>
+                            <button class="mapbtn"><a href="https://www.google.com/maps/dir/?api=1&destination=Hammerhütter+Weg+5,+Germany" target="_blank" style="color: white; text-decoration: none;">Route Anzeigen</a></button>
+                            <button class ="mapbtn" onclick="location.href='tel:017631192831' " style="color:white; text-decoration: none;">Anrufen</button>
+                        </ul>
+                    </div>
+                </div>
+                <span id="copyright">&copy;2023 DIGITALIX. All rights reserved.</span>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script src="vendors/node_modules/aos/dist/aos.js"></script>
         <script src="vendors/node_modules/typed.js/lib/typed.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
         <script src="vendors/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="vendors/node_modules/swiper/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
+
+
+
+
+
+
+

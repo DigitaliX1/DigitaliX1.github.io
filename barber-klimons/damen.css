@@ -4,10 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
-  text-decoration: none;
-  color: black;
-}
 body {
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -148,7 +144,7 @@ nav ul li:hover {
     margin: 0;
     padding: 0;
     height: 100dvh;
-    background-image: url("photos/close-up-hair-equipment.jpg");
+    background-image: url("photos/damenSalon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 /*     background-attachment: fixed; 
@@ -169,18 +165,9 @@ nav ul li:hover {
   min-width: 200px;
 }
 #welcome h1{
-  margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 700;
   color: white;
-}
-#welcome p{
-  color: white;
-  margin-bottom: 50px;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
 }
 .typed-cursor {
   display: none;
@@ -203,7 +190,7 @@ nav ul li:hover {
 .services{
   min-height: 100dvh;
   padding-bottom: 20px;
-  background-image: url("photos/test2.jpg");
+  background-image: url("photos/whiteBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
@@ -228,13 +215,12 @@ nav ul li:hover {
   color: black;
   align-self: center;
   margin-top: 3%;
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 400;
   margin-bottom: 1.5%;
 }
 .services p {
     color: black ;
-    align-self: center;
-    font-weight: 600;
 }
 .second-line{
   text-align: center;
@@ -353,21 +339,23 @@ nav ul li:hover {
 }
 .service-card {
   text-align: center;
-  width: 300px;
-  height: 350px;
+  width: 325px;
+  height: 400px;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .service-card img {
-  width: 100%;
-  max-height: 200px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 50%;
 }
 .service-card h3 {
   margin-top: 10px;
+  font-size: 20px;
 }
 .service-card p {
   margin-top: 5px;
@@ -383,6 +371,11 @@ nav ul li:hover {
   }
   #hamburger-icon {
     display: block;
+  }
+  #welcome h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
   }
 }
 .submenu {
