@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+/*   box-sizing: border-box;
+ */}
 body {
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -46,8 +46,7 @@ a{
   justify-content: space-between;
   z-index: 999;
   transition: all ease-in-out 0.7s;
-/*   overflow: hidden;
- */}
+}
 #header.active{
   background-color: black;
 }
@@ -165,7 +164,6 @@ nav ul li:hover {
 
 #welcome .welcome-container{
   z-index: 2;
-  min-width: 200px;
 }
 #welcome h1{
   font-size: 40px;
@@ -190,22 +188,22 @@ nav ul li:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-.services{
-  min-height: 100dvh;
+#services{
+  height: auto;
   padding-bottom: 20px;
   background-image: url("photos/blackBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; 
-  background-position:center ;
+/*   background-attachment: fixed; 
+ */  background-position:center ;
   position: relative;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: top;
-  flex-direction: column;
+/*   align-items: center;
+ */  text-align: center;
+/*   justify-content: top;
+ */  flex-direction: column;
 }
-.services::before {
+#services::before {
   content: "";
   position: absolute;
   top: 0;
@@ -213,21 +211,22 @@ nav ul li:hover {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity value as needed */
 }
-.services h2 {
-  color: #fff;
+#services h2 {
+  color: white;
   align-self: center;
   margin-top: 3%;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 1.5%;
 }
-.services p {
-  color: #FFFFFF;
-  align-self: center;
-  font-weight: 400;
-}
+
 .servicesc p{
   color: #090909 ;
+}
+#suppar{
+  color: white;
+  align-self: center;
+  font-weight: 400;
 }
 .second-line{
   text-align: center;
@@ -237,7 +236,7 @@ nav ul li:hover {
   width: 100%;
   border:0;
 }
-.directions{
+#directions{
   position: relative;
   width: 100%;
 }
@@ -294,6 +293,10 @@ nav ul li:hover {
   flex-direction: column;
   gap: 2rem;
 }
+#footer__list li i{
+  font-size: 30px;
+  color: #8a7321;
+}
 #footer__list-item {
   list-style: none;
 }
@@ -329,18 +332,18 @@ nav ul li:hover {
 #footer__list p{
   margin: 0;
 }
-@media only screen and (max-width: 750px) {
-  header nav {
-    display: none;
+  @media only screen and (max-width: 750px) {
+    header nav {
+      display: none;
+    }
+    #hamburger-icon {
+      display: block;
+    }
+    #welcome h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
   }
-  #hamburger-icon {
-    display: block;
-  }
-  #welcome h1{
-  font-size: 25px;
-  font-weight: 700;
-  color: white;
-}
 }
 .servicesc {
   display: flex;
@@ -349,7 +352,6 @@ nav ul li:hover {
   justify-content: center;
   gap: 20px;
 }
-
 .service-card {
   text-align: center;
   width: 325px;

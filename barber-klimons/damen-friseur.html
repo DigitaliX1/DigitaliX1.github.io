@@ -3,7 +3,7 @@
     <head>
         <title>MK-Salon-Damen-Siegen</title>
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
-        <link rel="icon" href="/photos/logso.png" type="image/x-icon">
+        <link rel="icon" type="image/png" href="photos/logo.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="vendors/node_modules/bootstrap-icons/font/bootstrap-icons.css">
@@ -12,8 +12,6 @@
 <!--         <link rel="stylesheet" href="vendors/node_modules/animate.css/">
         <link rel="stylesheet" href="vendors/node_modules/swiper/swiper-bundle.min.css"> -->
         <link rel="stylesheet" href="damen.css">
-        <link rel="icon" type="image/png" href="photos/logo.png">
-
     </head>
     <body>
         <header id ="header">
@@ -29,7 +27,7 @@
                       <li><a href="herren-friseur.html" class="new-page-btn">Herren</a></li>
                     </ul>
                 </li>
-                <li class="table-home"><a href="#services-section" class="nav-link scrollto active"><span>Services</span></a></li>
+                <li class="table-home"><a href="#services" class="nav-link scrollto active"><span>Services</span></a></li>
 <!--                 <li><a href="#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
  -->            <li class="table-home"><a href="https://www.google.com/maps/dir/?api=1&destination=Hammerhütter+Weg+5,+Germany" target="_blank" style="color: white; text-decoration: none;"><span>Route Anzeigen</span></a></li>
                 <li class="table-home"><a><button class ="callbtn" onclick="location.href='tel:017631192831' " style="color:white; text-decoration: none;">Anrufen</button></a></li>                
@@ -41,7 +39,7 @@
                 <div class="bar3"></div>
                 <ul class="mobile-menu">
                   <li><a href="#welcome" class="nav-link scrollto active"></i><span>Home</span></a></li>
-                  <li><a href="#services-section" class="nav-link scrollto active"><span>Services</span></a></li>
+                  <li><a href="#services" class="nav-link scrollto active"><span>Services</span></a></li>
                   <li><a href="herren-friseur.html" class="nav-link scrollto active"><span>Herren</span></a></li>
   <!--                 <li><a href="#customers" class="nav-link scrollto active"><span>Auswertung</span></a></li>
    -->                <li><a href="https://www.google.com/maps/dir/?api=1&destination=Hammerhütter+Weg+5,+Germany" target="_blank" style="color: white; text-decoration: none;"><span>Route Anzeigen</span></a></li>
@@ -50,16 +48,16 @@
               </div>
           </header>
         <section id="welcome" class="d-flex flex-column justify-content-center align-items-center">
-            <div class="welcome-container" data-aos="fade-in">
+            <div class="welcome-container" data-aos="fade-in" data-aos-duration="2500">
                 <em><h1 class="typed-container">
                 Ihr exklusiver Herrenfriseur für perfekte Haarschnitte
                 </h1></em>
             </div>
         </section>
-        <main id="main">
-            <div class="services">
-                <h2 data-aos="fade-in" data-aos-duration=1500">Exklusive Services für unvergleichliche Schönheit</h2>
-                <p data-aos="fade-in" data-aos-duration=2500">Entdecken Sie unsere herausragenden Services für individuelle Haarstylings. Von maßgeschneiderten Haarschnitten über atemberaubende Haarfarben bis hin zu revitalisierenden Pflegebehandlungen. </p>                
+        <main>
+            <div id="services">
+                <h2 data-aos="fade-in" data-aos-duration="1500">Exklusive Services für unvergleichliche Schönheit</h2>
+                <p data-aos="fade-in" data-aos-duration="2500">Entdecken Sie unsere herausragenden Services für individuelle Haarstylings. Von maßgeschneiderten Haarschnitten über atemberaubende Haarfarben bis hin zu revitalisierenden Pflegebehandlungen.</p>                
                 <section class="servicesc">
                     <div class="service-card" data-aos="flip-left"data-aos-duration="800">
                         <img src="photos/haarbeylag.jpg" alt="Service 2" loading="lazy">
@@ -67,7 +65,7 @@
                         <p>Verwöhnen Sie Ihren Bart mit unserer hochwertigen Pflege für ein gepflegtes und geschmeidiges Erscheinungsbild.</p>
                       </div>
                     <div class="service-card" data-aos="flip-left"data-aos-duration="1200">
-                        <img src="photos/haarfühnung.jpg" alt="Service 1" loading="lazy">
+                        <img src="photos/haarfuhnung.jpg" alt="Service 1" loading="lazy">
                         <h3>Fönung</h3>
                         <p>Egal, ob Sie lockere Wellen, glattes Haar oder voluminöses Styling wünschen, wir passen die Fönung individuell an Ihre Bedürfnisse an.</p>
                     </div>
@@ -77,7 +75,7 @@
                         <p>Mit unseren Foliensträhnen können Sie Ihren Look aufwerten und Ihre Persönlichkeit zum Ausdruck bringen.</p>
                     </div>
                     <div class="service-card" data-aos="flip-left"data-aos-duration="2000">
-                        <img src="photos/haarfärben.jpg" alt="Service 3" loading="lazy">
+                        <img src="photos/haarfarben.jpg" alt="Service 3" loading="lazy">
                         <h3>Färben</h3>
                         <p>Vor dem Färben beraten unsere Experten Sie eingehend und helfen Ihnen bei der Auswahl der optimalen Farbe, die zu Ihrem Hautton, Ihrer Augenfarbe und Ihrem persönlichen Stil passt.</p>
                     </div>
@@ -88,8 +86,8 @@
                     </div>
                   </section>
             </div>
-            <div class="directions">
-                <iframe class = "map"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d629.4234312510781!2d8.0180558!3d50.8738696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc1c9292115213%3A0xa5ea26d5207a1d2d!2sHammerh%C3%BCtter%20Weg%207%2C%2057072%20Siegen!5e0!3m2!1sen!2sde!4v1685479867726!5m2!1sen!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="directions">
+                <iframe class = "map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.4244207800424!2d8.017402883496889!3d50.87379632908992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc1d20d2ee4349%3A0x6b4d804e84bd76c6!2sFriseur%20MK-klimons!5e0!3m2!1sen!2sde!4v1685839065463!5m2!1sen!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </main>
         <footer id="footer">
@@ -107,25 +105,20 @@
                                     <i class="fa fa-instagram"></i>
                                 </a>
                             </li>
-                            <li id="footer__list-item">
-                                <a href="#" id="footer__list-link">
-                                    <i class="fa fa-facebook-official"></i>
-                                </a>
-                            </li>
                         </ul>
                         <span id="copyright">&copy;2023 DIGITALIX. All rights reserved.</span>
                     </div>
                     <div>
-                        <h6 id="footer__title">Business</h6>
+                        <h6 id="footer__title">MK-Friseur</h6>
                         <ul id="footer__list">
                             <li id="footer__list-item">
-                                <a href="" id="footer__list-link">About</a>
+                                <a href="#welcome" id="footer__list-link">Home</a>
                             </li>
                             <li id="footer__list-item">
-                                <a href="" id="footer__list-link">Careers</a>
+                                <a href="#services" id="footer__list-link">Services</a>
                             </li>
                             <li id="footer__list-item">
-                                <a href="" id="footer__list-link">Sitemap</a>
+                                <a href="#directions" id="footer__list-link">Adresse</a>
                             </li>
                             <li id="footer__list-item">
                                 <a href="/impressum.html" id="footer__list-link">Impressum</a>
@@ -147,6 +140,7 @@
         <script src="vendors/node_modules/aos/dist/aos.js"></script>
        <!--  <script src="vendors/node_modules/typed.js/lib/typed.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="vendors/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="vendors/node_modules/swiper/swiper-bundle.min.js"></script> -->
         <script src="script.js"></script>

@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-/*   box-sizing: border-box;
- */}
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -143,7 +143,7 @@ nav ul li:hover {
 #welcome{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100dvh;
     background-image: url("photos/damenSalon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,8 +162,8 @@ nav ul li:hover {
 }
 #welcome .welcome-container{
   z-index: 2;
-/*   min-width: 200px;
- */}
+  min-width: 200px;
+}
 #welcome h1{
   font-size: 40px;
   font-weight: 700;
@@ -187,33 +187,31 @@ nav ul li:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-#services{
-  min-height: auto;
+.services{
+  min-height: 100dvh;
   padding-bottom: 20px;
   background-image: url("photos/whiteBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-/*   background-attachment: fixed; 
- */  background-position:center ;
-  position: relatiabve;
+  background-attachment: fixed; 
+  background-position:center ;
+  position: relative;
   display: flex;
-/*   align-items: center;
- */  text-align: center;
-/*   justify-content: top;
- */  flex-direction: column;
-
- flex-wrap: nowrap;
-
+  align-items: center;
+  text-align: center;
+  justify-content: top;
+  flex-direction: column;
 }
-#services::before {
+.services::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity value as needed */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); 
 }
-#services h2 {
+.services h2 {
   color: black;
   align-self: center;
   margin-top: 3%;
@@ -221,10 +219,8 @@ nav ul li:hover {
   font-weight: 400;
   margin-bottom: 1.5%;
 }
-#services p {
-  color: black;
-  align-self: center;
-  font-weight: 400;
+.services p {
+    color: black ;
 }
 .second-line{
   text-align: center;
@@ -234,7 +230,7 @@ nav ul li:hover {
   width: 100%;
   border:0;
 }
-#directions{
+.directions{
   position: relative;
   width: 100%;
 }
@@ -263,6 +259,19 @@ nav ul li:hover {
   margin-bottom: 10px;
   margin: 0;
 }
+.impressum-link{
+  float: right;
+  color: white;
+  padding-right: 10px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.impressum-link a{
+  float: right;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
 #footer {
   padding-block: 5rem;
   background-color: black;
@@ -289,10 +298,6 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-#footer__list li i{
-  font-size: 30px;
-  color: #8a7321;
 }
 #footer__list-item {
   list-style: none;
@@ -334,8 +339,6 @@ nav ul li:hover {
 }
 .service-card {
   text-align: center;
-  display: inline-block;
-
   width: 325px;
   height: 400px;
   background-color: #f9f9f9;
@@ -373,19 +376,6 @@ nav ul li:hover {
     font-size: 25px;
     font-weight: 700;
     color: white;
-  }
-  #services{
-    min-height: auto;
-    padding-bottom: 20px;
-    background-image: url("photos/whiteBackgroundh.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center ;
-    position: relatiabve;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
   }
 }
 .submenu {
