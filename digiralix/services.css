@@ -1,0 +1,115 @@
+.our-services {
+	display: flex;
+/* 	justify-content: center;
+ */	align-items: center;
+	flex-direction: column;
+	height: auto;
+} 
+.service{
+    padding: 100px 60px;
+    margin: auto;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    width: calc(26% - 20px);
+    background-color: hsla(229, 47%, 10%, 1);
+    padding: 40px 20px;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    transform: all 0.5s ease-in;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 1);
+}
+.box{
+    color: #fff;
+    text-align: left;
+}
+.card img{
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    transition: all 0.6s ease-in-out;
+}
+.box i{
+    font-size: 40px;
+    padding-left: 10px;
+    color: #BF8A1A;
+    transition: color 0.3 ease;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: crimson;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    background-color: transparent;
+}
+.card:hover::before{
+    width: 100%;
+}
+.card:hover .box i {
+    color: #fff;
+}
+.card:hover img{
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .service {
+      padding: 50px 30px;
+      width: auto;
+
+    }
+    .service h1 {
+      margin-bottom: 40px;
+    }
+    
+    .content {
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      width: 100%; /* Set the width to 100% to occupy the full width of the container */
+      max-width: 320px; /* Set a maximum width for the card */
+      margin: 0 auto; /* Center the card horizontally */
+      margin-bottom: 20px;
+    }
+    .card img {
+      top: -100px;
+      right: -100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    .card {
+    width: 100%; /* Set the width to 100% to occupy the full width of the container */
+    max-width: 320px; /* Set a maximum width for the card */
+    margin: 0 auto; /* Center the card horizontally */
+    margin-bottom: 20px;
+  }
+    .card img {
+      top: -80px;
+      right: -80px;
+    }
+  }
+  

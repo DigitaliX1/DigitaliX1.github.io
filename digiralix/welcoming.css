@@ -1,0 +1,62 @@
+.welcome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.welcome h1 {
+    color: #acacac;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    padding-left: 5%;
+}
+.highlight {
+    background-image: linear-gradient(to right, #B561FF, #7B85FF); /* Set the desired gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;    font-family: Arial, sans-serif; /* Set the desired font */
+    font-style: italic; /* Set the text to italic */
+  }
+.welcome img {
+    max-width: 60%;
+    height: auto;
+    order: 1;
+}
+
+@media (max-width: 600px) {
+    .welcome {
+        flex-direction: column;
+    }
+    .welcome img {
+        max-width: 100%;
+    }
+    .welcome h1 {
+        order: 2;
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+  
