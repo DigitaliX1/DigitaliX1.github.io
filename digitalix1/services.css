@@ -6,25 +6,46 @@
 	height: auto;
 } 
 .service{
-    padding: 100px 60px;
+    padding: 100px 20px;
     margin: auto;
 }
 .content{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .card{
-    width: calc(26% - 20px);
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 20px);
     background-color: hsla(229, 47%, 10%, 1);
-    padding: 40px 20px;
+    padding: 30px 20px;
     border-radius: 6px;
     position: relative;
     cursor: pointer;
-    transform: all 0.5s ease-in;
     overflow: hidden;
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 1);
+    transform: translateX(-200%);
+    transition: transform 5s ease;
 }
+.card.slide-in {
+  transform: translateX(0);
+}
+@media (max-width: 1400px) {
+  .card {
+    flex-basis: calc(50% - 1%);
+  }
+}
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+}
+
 .box{
     color: #fff;
     text-align: left;

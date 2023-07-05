@@ -144,17 +144,31 @@ window.addEventListener("load", function() {
 });
 function toggleMobileMenu() {
   const menu = document.getElementById('hamburger-icon');
-  menu.classList.toggle('open');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (menu.classList.contains('open')) {
+    menu.classList.remove('open');
+    menu.classList.add('close');
+    mobileMenu.style.display = 'none'; // Hide the mobile menu
+  } else {
+    menu.classList.remove('close');
+    menu.classList.add('open');
+    mobileMenu.style.display = 'flex'; // Show the mobile menu
+  }
 }
+
+
+
 window.addEventListener('scroll', function() {
   var lines = document.querySelectorAll('.line');
   var steps = document.querySelectorAll('.step');
-  var windowHeight = document.documentElement.clientHeight -20;
+  var windowHeight = document.documentElement.clientHeight + 200;
 
   lines.forEach(function(line, index) {
     var step = steps[index];
     var sectionTop = step.offsetTop;
     var sectionHeight = step.offsetHeight;
+
     var scrollTop = window.scrollY + windowHeight / 5;
 
     // Calculate the scroll position relative to the section
@@ -167,8 +181,22 @@ window.addEventListener('scroll', function() {
       // Hide the line if scrolling above the section
       line.style.height = '0';
     } else if (scrollPosition > sectionHeight) {
+      console.log(sectionHeight)
       // Set the line's height to the section height when scrolling beyond the section
-      line.style.height = sectionHeight + 20 + 'px';
+      line.style.height =  sectionHeight+ 20 +'px';
     }
   });
+  window.addEventListener('scroll', function() {
+    var cards = document.querySelectorAll('.card');
+  
+    for (var i = 0; i < cards.length; i++) {
+      var card = cards[i];
+      var cardTopPosition = card.getBoundingClientRect().top;
+  
+      if (cardTopPosition - window.innerHeight <= 0) {
+        card.classList.add('slide-in');
+      }
+    }
+  });
+  
 });
